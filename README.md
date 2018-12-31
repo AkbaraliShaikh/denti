@@ -13,13 +13,13 @@ This project is created to demonstrate a CleanArchitecture/DDD/HexaArchitecture 
 
 ### Dependencies:
 
-- [gin](https://github.com/gin-gonic/gin)
-- [gorm](https://github.com/jinzhu/gorm)
-- [zap](https://github.com/uber-go/zap)
-- [dig](https://github.com/uber-go/dig)
-- [configor](https://github.com/jinzhu/configor)
-- [go.uuid](https://github.com/satori/go.uuid)
+- [gin](https://github.com/gin-gonic/gin)                 - Http Api Server
+- [gorm](https://github.com/jinzhu/gorm)			 	 - Object relational mapping
+- [zap](https://github.com/uber-go/zap) 				 - Logger
+- [dig](https://github.com/uber-go/dig)					 - Dependency Injection
+- [configor](https://github.com/jinzhu/configor) 	 - Configuration Helper
+- [go.uuid](https://github.com/satori/go.uuid) 		 - UUID v4
 
-#####  => Repo work is in-progress, will be keep updating the code, but the project structure is ready, have a look!
+#####  => Repo work is in-progress, will be keep updating the code, but the basic project structure is ready with the required code to understand, have a look!
 
 ## Happy Coding!
