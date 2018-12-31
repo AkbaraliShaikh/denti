@@ -1,0 +1,18 @@
+appname: denti
+logger:
+    use: zapLogger
+    environment: dev
+    loglevel: debug
+    filename: denti.log
+db:
+    use: postgres
+    postgres:
+        enabled: true
+        host: localhost
+        port: 5432
+        userName: postgres
+        password: P@ssw0rd
+        database: denti
+contacts:
+    name: 'Akbar Shaikh'
+    email: aashaikh55@gmail.com
