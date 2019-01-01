@@ -20,6 +20,10 @@ This project is created to demonstrate a CleanArchitecture/DDD/HexaArchitecture 
 - [configor](https://github.com/jinzhu/configor) 	 		 - Configuration Helper
 - [go.uuid](https://github.com/satori/go.uuid) 				 - UUID v4
 
+###  Project Structure:
+
+  <a target="_blank" href="https://github.com/AkbaraliShaikh/AspNetCore2Docker/blob/master/img/Go_Project_Structure.PNG" class="rich-diff-level-one"><img src="https://github.com/AkbaraliShaikh/AspNetCore2Docker/raw/master/img/Go_Project_Structure.PNG" alt="text" width=75%  height=400px></a>
+
 #####  => Repo work is in-progress, will be keep updating the code, but the basic project structure is ready with the required code to understand, have a look!
 
 ## Happy Coding!
