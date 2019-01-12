@@ -14,7 +14,7 @@ This project is created to demonstrate a CleanArchitecture/DDD/HexaArchitecture 
 ### Dependencies:
 
 - [gin](https://github.com/gin-gonic/gin)                 		 - Http Api Server
-- [gorm](https://github.com/jinzhu/gorm)			 	 - Object relational mapping
+- [gorm](https://github.com/jinzhu/gorm)			 	 - Object relational mapping (database)
 - [zap](https://github.com/uber-go/zap) 				 - Logger
 - [dig](https://github.com/uber-go/dig)					 - Dependency Injection
 - [configor](https://github.com/jinzhu/configor) 	 		 - Configuration Helper
