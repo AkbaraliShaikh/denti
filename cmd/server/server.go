@@ -48,7 +48,7 @@ func (ds *dserver) SetupDB() error {
 func (ds *dserver) Start() error {
 	var cfg *config.Config
 	if err := ds.cont.Invoke(func(c *config.Config) { cfg = c }); err != nil {
-		return nil
+		return err
 	}
 	return ds.router.Run(fmt.Sprintf(":%s", cfg.Port))
 }
