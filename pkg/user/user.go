@@ -25,6 +25,6 @@ func (User) TableName() string {
 }
 
 func (u *User) BeforeCreate(scope *gorm.Scope) {
-	uuid, _ := uuid.NewV4()
+	uuid := uuid.NewV4()
 	scope.SetColumn("ID", uuid.String())
 }

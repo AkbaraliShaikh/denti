@@ -4,6 +4,7 @@ import "github.com/jinzhu/configor"
 
 type Config struct {
 	AppName string `default:"denti"`
+	Port    string `default:"8282"`
 	Logger  struct {
 		Use         string `default:"zapLogger"`
 		Environment string `default:"prod"`

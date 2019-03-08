@@ -1,8 +1,11 @@
 package server
 
 import (
+	"fmt"
+
 	"os/user"
 
+	"denti/pkg/config"
 	"denti/pkg/logger"
 	"denti/pkg/patient"
 
@@ -43,5 +46,9 @@ func (ds *dserver) SetupDB() error {
 
 // Start start serving the application
 func (ds *dserver) Start() error {
-	return ds.router.Run(":8182")
+	var cfg *config.Config
+	if err := ds.cont.Invoke(func(c *config.Config) { cfg = c }); err != nil {
+		return nil
+	}
+	return ds.router.Run(fmt.Sprintf(":%s", cfg.Port))
 }
