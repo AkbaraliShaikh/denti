@@ -1,6 +1,6 @@
 # Directories
 .vscode/
-vendor/
+
 
 # Binaries for programs and plugins
 *.exe
@@ -15,5 +15,4 @@ vendor/
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 denti
-denti.log
 denti.log
