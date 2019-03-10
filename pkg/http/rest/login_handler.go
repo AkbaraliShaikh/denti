@@ -26,9 +26,9 @@ func (l loginController) Signin(ctx *gin.Context) {
 		return
 	}
 
-	ok := l.svc.Signin(lg.Email, lg.Password)
-	if !ok {
+	if ok := l.svc.Signin(lg.Email, lg.Password); !ok {
 		ctx.Status(http.StatusForbidden)
+		return
 	}
 
 	ctx.Status(http.StatusOK)
