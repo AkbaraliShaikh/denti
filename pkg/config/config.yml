@@ -1,5 +1,5 @@
 appname: denti
-port: 8283
+port: 8282
 logger:
     use: zapLogger
     environment: dev
@@ -9,8 +9,8 @@ db:
     use: postgres
     postgres:
         enabled: true
-        host: localhost
-        port: 6543
+        host: postgres
+        port: 5432
         userName: postgres
         password: postgres
         database: denti
