@@ -23,6 +23,10 @@ This project is created to demonstrate a CleanArchitecture/DDD/HexaArchitecture 
 ###  Project Structure:
 
   <a target="_blank" href="https://github.com/AkbaraliShaikh/AspNetCore2Docker/blob/master/img/Go_Project_Structure.PNG" class="rich-diff-level-one"><img src="https://github.com/AkbaraliShaikh/AspNetCore2Docker/raw/master/img/Go_Project_Structure.PNG" alt="text" width=75%  height=400px></a>
+  
+###  Run:
+  - $ sudo docker-compose up -d
+  - $ curl http://localhost:8282/api/v1/health/
 
 #####  => Repo work is in-progress, will be keep updating the code, but the basic project structure is ready with the required code to understand, have a look!
 
