@@ -3,11 +3,10 @@ package server
 import (
 	"fmt"
 
-	"os/user"
-
 	"denti/pkg/config"
 	"denti/pkg/logger"
 	"denti/pkg/patient"
+	"denti/pkg/user"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
