@@ -9,16 +9,16 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
-type userController struct {
+type userCtrl struct {
 	log logger.LogInfoFormat
 	svc user.Service
 }
 
-func NewUserController(log logger.LogInfoFormat, svc user.Service) *userController {
-	return &userController{log, svc}
+func NewUserCtrl(log logger.LogInfoFormat, svc user.Service) *userCtrl {
+	return &userCtrl{log, svc}
 }
 
-func (u *userController) GetAll(ctx *gin.Context) {
+func (u *userCtrl) GetAll(ctx *gin.Context) {
 	users, err := u.svc.GetAll()
 	if len(users) == 0 || err != nil {
 		ctx.Status(http.StatusNoContent)
@@ -27,7 +27,7 @@ func (u *userController) GetAll(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, users)
 }
 
-func (u *userController) GetByID(ctx *gin.Context) {
+func (u *userCtrl) GetByID(ctx *gin.Context) {
 	id := ctx.Param("id")
 	if _, err := uuid.FromString(id); err != nil {
 		ctx.Status(http.StatusBadRequest)
@@ -42,7 +42,7 @@ func (u *userController) GetByID(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, user)
 }
 
-func (u *userController) Store(ctx *gin.Context) {
+func (u *userCtrl) Store(ctx *gin.Context) {
 	var user user.User
 	if err := ctx.ShouldBindJSON(&user); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -52,7 +52,7 @@ func (u *userController) Store(ctx *gin.Context) {
 	ctx.Status(http.StatusCreated)
 }
 
-func (u *userController) Update(ctx *gin.Context) {
+func (u *userCtrl) Update(ctx *gin.Context) {
 	id := ctx.Param("id")
 	if _, err := uuid.FromString(id); err != nil {
 		ctx.Status(http.StatusBadRequest)
@@ -69,7 +69,7 @@ func (u *userController) Update(ctx *gin.Context) {
 	ctx.Status(http.StatusOK)
 }
 
-func (u *userController) Delete(ctx *gin.Context) {
+func (u *userCtrl) Delete(ctx *gin.Context) {
 	id := ctx.Param("id")
 	if _, err := uuid.FromString(id); err != nil {
 		ctx.Status(http.StatusBadRequest)

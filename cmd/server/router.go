@@ -21,7 +21,7 @@ func (ds *dserver) MapRoutes() {
 func (ds *dserver) healthRoutes(api *gin.RouterGroup) {
 	healthRoutes := api.Group("/health")
 	{
-		h := rest.NewHealthController()
+		h := rest.NewHealthCtrl()
 		healthRoutes.GET("/", h.Ping)
 	}
 }
@@ -34,7 +34,7 @@ func (ds *dserver) loginRoutes(api *gin.RouterGroup) {
 
 	loginRoutes := api.Group("/login")
 	{
-		f := rest.NewLoginController(ds.logger, loginSvc)
+		f := rest.NewLoginCtrl(ds.logger, loginSvc)
 		loginRoutes.POST("/", f.Signin)
 	}
 }
@@ -47,7 +47,7 @@ func (ds *dserver) userRoutes(api *gin.RouterGroup) {
 			userSvc = u
 		})
 
-		usr := rest.NewUserController(ds.logger, userSvc)
+		usr := rest.NewUserCtrl(ds.logger, userSvc)
 
 		userRoutes.GET("/", usr.GetAll)
 		userRoutes.POST("/", usr.Store)

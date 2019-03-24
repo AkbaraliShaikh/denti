@@ -9,16 +9,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type loginController struct {
+type loginCtrl struct {
 	log logger.LogInfoFormat
 	svc login.Service
 }
 
-func NewLoginController(log logger.LogInfoFormat, svc login.Service) *loginController {
-	return &loginController{log, svc}
+func NewLoginCtrl(log logger.LogInfoFormat, svc login.Service) *loginCtrl {
+	return &loginCtrl{log, svc}
 }
 
-func (l loginController) Signin(ctx *gin.Context) {
+func (l loginCtrl) Signin(ctx *gin.Context) {
 	var lg login.Login
 	if err := ctx.ShouldBindJSON(&lg); err != nil {
 		l.log.Errorf("signin request bind failed with reason : %v", err)
