@@ -27,6 +27,11 @@ This project is created to demonstrate a CleanArchitecture/DDD/HexaArchitecture 
 ###  Run:
   - $ sudo docker-compose up -d
   - $ curl http://localhost:8282/api/v1/health/
+  
+###  Test:
+```curl --header "Content-Type: application/json" --request POST --data '{"email":"a.a.shaikh55@gmail.com","first_name":"Akbar","last_name":"Shaikh","password":"password","gender":1,"picture":"","phone_number":"9123456789"}'  http://localhost:8283/api/v1/users/```
+
+`curl http://localhost:8283/api/v1/users/`
 
 #####  => Repo work is in-progress, will be keep updating the code, but the basic project structure is ready with the required code to understand, have a look!
 
