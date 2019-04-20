@@ -31,9 +31,7 @@ func NewServer(e *gin.Engine, c *dig.Container, l logger.LogInfoFormat) *dserver
 func (ds *dserver) SetupDB() error {
 	var db *gorm.DB
 
-	if err := ds.cont.Invoke(func(d *gorm.DB) {
-		db = d
-	}); err != nil {
+	if err := ds.cont.Invoke(func(d *gorm.DB) { db = d }); err != nil {
 		return err
 	}
 
