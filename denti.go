@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"denti/cmd/server"
-	"denti/pkg/di"
-	"denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/cmd/server"
+	"github.com/akbaralishaikh/denti/pkg/di"
+	"github.com/akbaralishaikh/denti/pkg/logger"
 
 	"github.com/gin-gonic/gin"
 )

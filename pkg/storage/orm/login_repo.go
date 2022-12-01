@@ -1,8 +1,8 @@
 package orm
 
 import (
-	"denti/pkg/logger"
-	"denti/pkg/login"
+	"github.com/akbaralishaikh/denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/pkg/login"
 
 	"github.com/jinzhu/gorm"
 )

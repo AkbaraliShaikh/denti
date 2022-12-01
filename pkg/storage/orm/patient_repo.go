@@ -3,7 +3,7 @@ package orm
 import (
 	"errors"
 
-	"denti/pkg/patient"
+	"github.com/akbaralishaikh/denti/pkg/patient"
 
 	"github.com/jinzhu/gorm"
 )

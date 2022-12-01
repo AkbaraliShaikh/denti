@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"denti/pkg/logger"
-	"denti/pkg/user"
+	"github.com/akbaralishaikh/denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/pkg/user"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

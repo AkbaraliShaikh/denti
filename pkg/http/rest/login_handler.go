@@ -3,8 +3,8 @@ package rest
 import (
 	"net/http"
 
-	"denti/pkg/logger"
-	"denti/pkg/login"
+	"github.com/akbaralishaikh/denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/pkg/login"
 
 	"github.com/gin-gonic/gin"
 )

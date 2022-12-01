@@ -4,7 +4,7 @@ import (
 	"errors"
 	"log"
 
-	"denti/pkg/config"
+	"github.com/akbaralishaikh/denti/pkg/config"
 
 	"go.uber.org/zap"
 )

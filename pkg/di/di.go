@@ -1,12 +1,12 @@
 package di
 
 import (
-	"denti/pkg/config"
-	"denti/pkg/logger"
-	"denti/pkg/login"
-	"denti/pkg/storage"
-	"denti/pkg/storage/orm"
-	"denti/pkg/user"
+	"github.com/akbaralishaikh/denti/pkg/config"
+	"github.com/akbaralishaikh/denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/pkg/login"
+	"github.com/akbaralishaikh/denti/pkg/storage"
+	"github.com/akbaralishaikh/denti/pkg/storage/orm"
+	"github.com/akbaralishaikh/denti/pkg/user"
 
 	"go.uber.org/dig"
 )

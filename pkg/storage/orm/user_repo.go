@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"denti/pkg/logger"
-	"denti/pkg/user"
+	"github.com/akbaralishaikh/denti/pkg/logger"
+	"github.com/akbaralishaikh/denti/pkg/user"
 
 	"github.com/jinzhu/gorm"
 )

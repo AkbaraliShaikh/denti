@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"denti/pkg/config"
+	"github.com/akbaralishaikh/denti/pkg/config"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"

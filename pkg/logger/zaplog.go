@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"denti/pkg/config"
+	"github.com/akbaralishaikh/denti/pkg/config"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

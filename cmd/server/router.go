@@ -1,9 +1,9 @@
 package server
 
 import (
-	"denti/pkg/http/rest"
-	"denti/pkg/login"
-	"denti/pkg/user"
+	"github.com/akbaralishaikh/denti/pkg/http/rest"
+	"github.com/akbaralishaikh/denti/pkg/login"
+	"github.com/akbaralishaikh/denti/pkg/user"
 
 	"github.com/gin-gonic/gin"
 )
